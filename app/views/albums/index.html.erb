@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+
+<% @albums.each do |album| %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= album.title %> (<%= album.year %>)</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= link_to image_tag(album.album_art_url, width:"100%"), album %>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <strong><%= album.artist %></strong>
+        <br/>
+        <%= album.track_list.html_safe %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= link_to 'Edit', edit_album_path(album) %>
+        <%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= link_to 'Add Album!', new_album_path, class: "btn btn-warning" %>
