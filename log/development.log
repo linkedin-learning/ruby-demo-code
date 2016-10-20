@@ -3805,3 +3805,763 @@ Migrations are pending. To resolve this issue, run:
   Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 12:37:51 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.8ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.4ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-10-20 12:37:52 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateAlbums (20160824020236)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "artist" varchar, "title" varchar, "year" varchar, "track_list" text, "album_art_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160824020236"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateArts (20161020163731)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "arts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "artist" varchar, "year" varchar, "image_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161020163731"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-10-20 12:38:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant ArtController):
+  activesupport (4.2.4) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.4) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.4) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.4) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.4) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.9ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.9ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.5ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-10-20 12:38:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.1ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 12:39:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.1ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 391ms (Views: 382.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:39:16 -0400
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:39:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTitleToArt (20161020164125)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (7.5ms)[0m  [1mALTER TABLE "arts" ADD "title" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161020164125"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddDescriptionToArt (20161020164140)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "arts" ADD "description" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161020164140"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-10-20 12:41:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.1ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 222ms (Views: 209.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 12:42:05 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/albums/new" for ::1 at 2016-10-20 12:42:07 -0400
+Processing by AlbumsController#new as HTML
+  Rendered albums/_form.html.erb (20.2ms)
+  Rendered albums/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 47ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-20 12:43:22 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.1ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:43:22 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:43:22 -0400
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:43:23 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (2.6ms)
+  Rendered arts/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:44:35 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (3.9ms)
+  Rendered arts/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:44:35 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:44:35 -0400
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:44:53 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (3.4ms)
+  Rendered arts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:44:54 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:44:54 -0400
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:45:27 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pPMYvWFFsH+3vClF2xwQfpbWhKBcvRSrdDyySEXwnoD/YTEU0GbKNv27StySV0TueO1choC5syfq3QCQj13DWA==", "art"=>{"title"=>"Starry Night", "artist"=>"Pablo Picasso", "year"=>"1889", "image_url"=>"http://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200", "description"=>"on every dorm wall"}, "commit"=>"Create Art"}
+Unpermitted parameters: title, description
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "arts" ("artist", "year", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["artist", "Pablo Picasso"], ["year", "1889"], ["image_url", "http://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200"], ["created_at", "2016-10-20 16:45:27.753444"], ["updated_at", "2016-10-20 16:45:27.753444"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts/1
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/arts/1" for ::1 at 2016-10-20 12:45:27 -0400
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered arts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:45:29 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `details' for #<Art:0x007f95fe53d838>):
+    14:       <div class="col-xs-12 col-sm-6 col-md-3">
+    15:         <strong><%= art.artist %></strong>
+    16:         <br/>
+    17:         <%= art.details.html_safe %>
+    18:       </div>
+    19:     </div>
+    20:     <div class="row">
+  app/views/arts/index.html.erb:17:in `block in _app_views_arts_index_html_erb___2124763077405944657_70141096686860'
+  app/views/arts/index.html.erb:4:in `_app_views_arts_index_html_erb___2124763077405944657_70141096686860'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.7ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:45:30 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.1ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `details' for #<Art:0x007f95fd3d25f8>):
+    14:       <div class="col-xs-12 col-sm-6 col-md-3">
+    15:         <strong><%= art.artist %></strong>
+    16:         <br/>
+    17:         <%= art.details.html_safe %>
+    18:       </div>
+    19:     </div>
+    20:     <div class="row">
+  app/views/arts/index.html.erb:17:in `block in _app_views_arts_index_html_erb___2124763077405944657_70141161967880'
+  app/views/arts/index.html.erb:4:in `_app_views_arts_index_html_erb___2124763077405944657_70141161967880'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.7ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.5ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:45:38 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `html_safe' for nil:NilClass):
+    14:       <div class="col-xs-12 col-sm-6 col-md-3">
+    15:         <strong><%= art.artist %></strong>
+    16:         <br/>
+    17:         <%= art.description.html_safe %>
+    18:       </div>
+    19:     </div>
+    20:     <div class="row">
+  app/views/arts/index.html.erb:17:in `block in _app_views_arts_index_html_erb___2124763077405944657_70141147392680'
+  app/views/arts/index.html.erb:4:in `_app_views_arts_index_html_erb___2124763077405944657_70141147392680'
+
+
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.6ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brandonrich/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.9ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:45:44 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:45:45 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:45:45 -0400
+
+
+Started DELETE "/arts/1" for ::1 at 2016-10-20 12:46:07 -0400
+Processing by ArtsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vI1wtCKJ5d3U35OXe0Qlkovw91emxDTjuSolq2KLcf7nH1kdk6qflJ7Y8A4yD3ECZcsvcXrAk28ny5dzqCYsJg==", "id"=>"1"}
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "arts" WHERE "arts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts
+Completed 302 Found in 15ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:46:07 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:46:19 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (3.3ms)
+  Rendered arts/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:46:32 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2bkTSWG+DIlKUaJK3YiSx0DKUMCHT5zXtxDWIcij5YE9M3klKWCe28uJRBiPXbb8zjxZd4Zmf/APfGATY/STg==", "art"=>{"title"=>"Starry Night", "artist"=>"Pablo Picasso", "year"=>"1889", "image_url"=>"http://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200", "description"=>"on every dorm wall"}, "commit"=>"Create Art"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "arts" ("artist", "year", "image_url", "description", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["artist", "Pablo Picasso"], ["year", "1889"], ["image_url", "http://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200"], ["description", "on every dorm wall"], ["title", "Starry Night"], ["created_at", "2016-10-20 16:46:32.735644"], ["updated_at", "2016-10-20 16:46:32.735644"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts/2
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/arts/2" for ::1 at 2016-10-20 12:46:32 -0400
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered arts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:46:33 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:51:35 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (2.4ms)
+  Rendered arts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:52:14 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqOUgR+UB3pYnkQLImy4NDn2IyQWGWwRJ4CesbfxarzpMb0orrd9MxKZJ5JrJ+yk1837Asody525YSxpfVw3ZA==", "art"=>{"title"=>"Self-Portrait", "artist"=>"Pablo Picasso", "year"=>"1889", "image_url"=>"http://images.nga.gov/?service=asset&action=show_preview&asset=68588", "description"=>"Total selfie"}, "commit"=>"Create Art"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "arts" ("artist", "year", "image_url", "description", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["artist", "Pablo Picasso"], ["year", "1889"], ["image_url", "http://images.nga.gov/?service=asset&action=show_preview&asset=68588"], ["description", "Total selfie"], ["title", "Self-Portrait"], ["created_at", "2016-10-20 16:52:14.394544"], ["updated_at", "2016-10-20 16:52:14.394544"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts/3
+Completed 302 Found in 3ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/arts/3" for ::1 at 2016-10-20 12:52:14 -0400
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArt Load (0.1ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered arts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:52:16 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:52:59 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:52:59 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:52:59 -0400
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:53:10 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:53:10 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:53:10 -0400
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:53:20 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:53:20 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:53:20 -0400
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:54:15 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application-b04d3b8c0c547d4232f8b26a587ef87a2c51dd3b13ec146b8955d2f3ec143b5f.css" for ::1 at 2016-10-20 12:54:16 -0400
+
+
+Started GET "/assets/application-e855a5efbf69716421daa9d945368d7ac5831090d3da2ae693c9f6488f031e65.js" for ::1 at 2016-10-20 12:54:16 -0400
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:54:18 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (2.4ms)
+  Rendered arts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:54:22 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K2ZwP0h+d5CbHjOhK4pjAiSGXFtXy2GV+7oXEy97Lqpw9FmW+V0N2dEZUDhiwTeSyr2EfYvPxhllW6XL5dZzcg==", "art"=>{"title"=>"foo", "artist"=>"bar", "year"=>"", "image_url"=>"", "description"=>""}, "commit"=>"Create Art"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "arts" ("artist", "year", "image_url", "description", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["artist", "bar"], ["year", ""], ["image_url", ""], ["description", ""], ["title", "foo"], ["created_at", "2016-10-20 16:54:22.543579"], ["updated_at", "2016-10-20 16:54:22.543579"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts/4
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/arts/4" for ::1 at 2016-10-20 12:54:22 -0400
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered arts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:54:31 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/arts/4" for ::1 at 2016-10-20 12:54:35 -0400
+Processing by ArtsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cGVCCHVoRl0WOx5fHVvSbvmYnYhyz1GaE6IdduVFpVQr92uhxEs8FFw8fcZUEIb+F6NFrq7L9haNQ6+uL+j4jA==", "id"=>"4"}
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "arts" WHERE "arts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:54:35 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:54:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 229ms (Views: 220.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:54:49 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (14.8ms)
+  Rendered arts/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:54:53 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Nm81su5nFVGLuCSEh2xMyieM0maqqfegov0DIPsez+7S5V/eprmHAwpgwtbVuWjxqXrb0auAFIcakbUSUEm5w==", "art"=>{"title"=>"foo", "artist"=>"", "year"=>"", "image_url"=>"", "description"=>""}, "commit"=>"Create Art"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "arts" ("artist", "year", "image_url", "description", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["artist", ""], ["year", ""], ["image_url", ""], ["description", ""], ["title", "foo"], ["created_at", "2016-10-20 16:54:53.828479"], ["updated_at", "2016-10-20 16:54:53.828479"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts/5
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/arts/5" for ::1 at 2016-10-20 12:54:53 -0400
+Processing by ArtsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered arts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:55:07 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.3ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/arts/5" for ::1 at 2016-10-20 12:55:11 -0400
+Processing by ArtsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gCkFnu9vZmGtg5MgUcQoN90pdebioJCLCsc0VW8l0Njbuyw3XkwcKOeE8LkYj3ynMxKtwD6kNweUJoaNpYiNAA==", "id"=>"5"}
+  [1m[35mArt Load (0.2ms)[0m  SELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "arts" WHERE "arts"."id" = ?  [["id", 5]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts
+Completed 302 Found in 10ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:55:11 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/arts/new" for ::1 at 2016-10-20 12:55:12 -0400
+Processing by ArtsController#new as HTML
+  Rendered arts/_form.html.erb (2.6ms)
+  Rendered arts/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/arts" for ::1 at 2016-10-20 12:55:15 -0400
+Processing by ArtsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eseNYHCnznMX6k6qcXYWVvIIq5BrUwJecyFxDhn93BYhVaTJwYS0Ol3tLTM4PULGHDNztrdXpdLtwMPW01CBzg==", "art"=>{"title"=>"foo", "artist"=>"", "year"=>"", "image_url"=>"", "description"=>""}, "commit"=>"Create Art"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "arts" ("artist", "year", "image_url", "description", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["artist", ""], ["year", ""], ["image_url", ""], ["description", ""], ["title", "foo"], ["created_at", "2016-10-20 16:55:15.339746"], ["updated_at", "2016-10-20 16:55:15.339746"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/arts
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:55:15 -0400
+Processing by ArtsController#index as HTML
+  [1m[35mArt Load (0.2ms)[0m  SELECT "arts".* FROM "arts"
+  Rendered arts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/arts/6" for ::1 at 2016-10-20 12:55:20 -0400
+Processing by ArtsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VE+qFFH8YIIB8+i7DkRIeN0cGTSPhX6f7jHnkCV+cHEP3YO94N8ay0v0iyJHDxzoMyfBElOB2RNw0FVI79MtqQ==", "id"=>"6"}
+  [1m[36mArt Load (0.1ms)[0m  [1mSELECT  "arts".* FROM "arts" WHERE "arts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "arts" WHERE "arts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (6.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/arts
+Completed 302 Found in 9ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/arts" for ::1 at 2016-10-20 12:55:20 -0400
+Processing by ArtsController#index as HTML
+  [1m[36mArt Load (0.2ms)[0m  [1mSELECT "arts".* FROM "arts"[0m
+  Rendered arts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
