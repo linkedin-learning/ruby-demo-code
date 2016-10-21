@@ -1,9 +1,11 @@
+require 'socket'
 class ArtsController < ApplicationController
   before_action :set_art, only: [:show, :edit, :update, :destroy]
 
   # GET /arts
   # GET /arts.json
   def index
+    @hostname = Socket.gethostname
     @arts = Art.all
   end
 
