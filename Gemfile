@@ -46,3 +46,4 @@ group :development do
   gem 'spring'
 end
 gem 'pg', '~> 0.21'
+gem 'rspec-rails'
