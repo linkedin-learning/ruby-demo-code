@@ -4,11 +4,8 @@ env:
   variables:
     foo: "bar"
     RAILS_ENV: "test"
-  parameter-store:
 
 phases:
-  install:
-  pre_build:
   build:
     commands:
       - echo Build started on `date`
