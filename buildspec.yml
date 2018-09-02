@@ -6,6 +6,10 @@ env:
     RAILS_ENV: "test"
 
 phases:
+  install:
+    commands:
+      - echo Installing RSpec...
+      - gem install rspec
   build:
     commands:
       - echo Build started on `date`
