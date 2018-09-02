@@ -9,12 +9,12 @@ phases:
   install:
     commands:
       - echo Installing RSpec...
-      - gem install rspec
+      - bundle install
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Ruby code...
-      - rspec 
+      - bundle exec rspec 
     finally:
       - echo "Finally block of build phase reached.  this executes even if the commands in this phase error out."
   post_build:
