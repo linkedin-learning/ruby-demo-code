@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands:
-      - echo Installing RSpec...
+      - echo Bundle install...
       - bundle install
   build:
     commands:
