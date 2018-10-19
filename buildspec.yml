@@ -10,6 +10,7 @@ phases:
     commands:
       - echo Bundle install...
       - bundle install
+      - bundle exec rake db:migrate
   build:
     commands:
       - echo Build started on `date`
